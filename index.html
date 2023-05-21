@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Developers After Party | not your regular Creative Studio | Web Design | Web Development</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="Developers After Party is a creative studio specializing in web design and development. We offer personalized services to help your website stand out online. Contact us to discuss your project.">
+    <meta name="keywords" content="web design, web development, Developers After Party">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Developers After Party">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/normalize.css"/>
+    <link rel="stylesheet" href="./resources/css/style.css"/>
+    <script src="./resources/app/app.js" defer></script>
+    <script src="./resources/app/app2.js" defer></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+      const currentUrl = window.location.href;
+      const modifiedUrl = currentUrl.replace('/index.html', '');
+      window.history.replaceState({}, '', modifiedUrl);
+      });
+    </script>
+    <link rel="icon" href="./resources/images/logo-icon.png" type="image/x-icon"/>
+    <link rel="mask-icon" href="./resources/images/logo-icon.png" type="image/x-icon"/>
+    <title>Developers After Party</title>
+  </head>
+
+  <body>
+    <div class="splash">
+      <img src="./resources/images/logo-sq.png" class="fade-in" height="100px" width="auto" alt="Developers After Party Logo">
+    </div>
+    <header>
+      <img src="./resources/images/logo-ls.png" width="100px" height="auto" alt="Developers After Party Logo"/>
+      <div class="nav-toggle">
+        <div class="nav-menu-cl">
+         <a>MENU</a>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-menu-vertical">
+          <li><a class="anchor" onclick="scrollToSection('welcome-section')">HOME</a></li>
+          <li><a class="anchor" onclick="scrollToSection('about-section')">ABOUT</a></li>
+          <li><a class="anchor" onclick="scrollToSection('catalog-section')">CATALOG</a></li>
+          <li><a class="anchor" onclick="scrollToSection('services-section')">SERVICES</a></li>
+          <li><a class="anchor" onclick="scrollToSection('contact-section')">CONTACT</a></li>  
+          <script>
+            function scrollToSection(sectionId) {
+              const target = document.getElementById(sectionId);
+              if (target) {
+                setTimeout(function() {
+                  target.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }, 30); 
+              }
+            }
+          </script>          
+          <li><a href="https://developersafterparty.substack.com/" target="_blank">NEWSLETTER</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+          <li><a href="#welcome-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#catalog-section">Catalog</a></li>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><a href="https://developersafterparty.substack.com/" target="_blank">Newsletter</a></li>
+          </ul>
+      </div> 
+    </header>
+    <script src="./resources/app/app.js"></script>
+    <div class="wrapper">
+      <section id="welcome-section">
+        <div class="title">
+          <h1 class="welcome-title">we are not your regular</h1>
+          <h1 class="nice-title">
+            <span></span>
+            <span>C</span>
+            <span>r</span>
+            <span>e</span>
+            <span>a</span>
+            <span>t</span>
+            <span>i</span>
+            <span>v</span>
+            <span>e</span>
+            <span></span>
+          </br>
+            <span></span>
+            <span>S</span>
+            <span>t</span>
+            <span>u</span>
+            <span>d</span>
+            <span>i</span>
+            <span>o</span>
+            <span></span>
+          </h1>
+          <a  class="anchor" onclick="scrollToSection('about-section')">
+            <div class="mouse_scroll">
+              <div>
+                <span class="m_scroll_arrows one"></span>
+                <span class="m_scroll_arrows two"></span>
+                <span class="m_scroll_arrows three"></span>
+              </div>
+            </div>
+          </a>
+          <script>
+            function scrollToSection(sectionId) {
+              const target = document.getElementById(sectionId);
+              if (target) {
+                setTimeout(function() {
+                  target.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }, 30); 
+              }
+            }
+          </script> 
+        </div>    
+      </section>
+      <section id="about-section">
+        <div class="spc-out">
+        <div class="abt-title"> 
+          <h2>Who are we?</h2>
+        </div> 
+        <div class="abt-container">
+         <div class="three-itm">
+          <div class="item1">
+            <p>We are not your average Creative Studio, 
+              we like to do things a bit differently around here. 
+              We are a small group of hardworking 
+              individuals who are passionate about bringing your website 
+              and design ideas to life. Whether you have a specific concept 
+              in mind or just a general idea, we're always excited to jump 
+              in.
+            </br> </br>
+              Our ultimate goal is to help you stand out online and achieve 
+              success quickly. We believe in providing personalized support 
+              and 1-on-1 attention to each client. Your voice and vision are 
+              our top priority, and we work hard to make sure we understand 
+              your goals and preferences.
+            </br> </br>
+              If you're ready to start a new project, we are here! 
+              Let's brainstorm ideas together and create something amazing 
+              that reflects your unique style and vision. We love working on 
+              all kinds of projects, and we are confident that we can help you 
+              achieve your goals in no time.</p>
+          </div>
+          <div class="item2">
+            <img src="./resources/images/logo-rd.png" class="rotate-infinite" alt="Developers After Party Logo">
+          </div>
+          <div class="item3">
+            <p>"Our tale started with two childhood buddies who, 
+              despite living far away from each other for years, 
+              reconnected and began collaborating. Even though they 
+              were in different time zones, they remained close and 
+              started coming up with new ideas everyday.
+            </br> </br>
+              After working on different projects, they came up with the 
+              concept of starting a creative studio. Their goal was to collaborate 
+              with other people and help bring their creative ideas to life. They 
+              also wanted to work with other web developers and designers on various 
+              projects, both personal and external.
+            </br> </br>
+              The journey has just begun, and they are excited about the endless 
+              possibilities in the future. They are determined to make greater 
+              things happen and are looking forward to it."
+            </p>
+          </div>
+         </div>
+          <div class="item4">
+            <p>“Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes, and having fun.” 
+            </br>- Mary Lou Cook</p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <div id="spc-two">
+      </div>
+      <section id="catalog-section">
+        <div class="abt-title">
+          <h2>Our Catalog</h2>
+        </div>
+        <div class="ctl-ctn">
+          <div class="ctl-img">
+            <a href="https://www.andreifo.dev" target="_blank">  
+              <img src="./resources/images/catalog/af-logo.png" alt="Andrei F - Portofolio">
+            </a>
+          </div>
+          <div class="ctl-img">
+            <a href="https://www.mriyatheory.com" target="_blank">  
+              <img src="./resources/images/catalog/mriya-logo.png" alt="Mriya Theory">
+            </a>
+          </div>
+          <div class="ctl-img">
+            <a href="https://www.pac-administrare.ro" target="_blank">  
+              <img src="./resources/images/catalog/pac-logo.png" alt="PAC">
+            </a>
+          </div>
+          <div class="ctl-img">
+            <a href="https://www.bugysconstruct.com/" target="_blank">  
+              <img src="./resources/images/catalog/bugyys-logo.png" alt="Bugyys Construct">
+            </a>
+          </div>
+        </div>
+        <div class="ctl-p">
+          <p>...more coming soon</p>
+        </div>
+      </section>
+      <div id="spc">
+      </div>
+      <section id="services-section">
+        <div class="spc-out">
+        <div class="serv-title"> 
+          <h2>Services</h2>
+          <p>We've got a great selection of services available, 
+            and we've made sure to create packages that fit every budget.
+          </br> 
+            Take a look and pick the one that works best for you!</p>
+        </div> 
+        <div class="serv-ctn">
+            <div class="slider-nav">
+              <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            </div>
+            <div class="slide">
+              <div class="serv">
+                <h4 class="nice-title serv-tl">
+                 <span>B</span>
+                 <span>A</span>
+                 <span>S</span>
+                 <span>I</span>
+                 <span>C</span>
+                </h4>
+                <ul>
+                  <li>Web Consultancy</li>
+                  <li>Web Design (Up to 10 pages)</li>
+                  <li>Website Development with WordPress (Up to 10 pages)</li>
+                  <li>Basic Hosting (1 year)</li>
+                  <li>Technical Support (1 year)</li>
+                  <li>Maintenance (1 hour per month)</li>
+                </ul>
+                <button class="custom-btn">
+                  <a target="_blank" href="mailto:contact@developersafterparty.com?subject=Request for Pricing and Details - BASIC Package&body=Hello there,%0D%0A%0D%0AI hope this email finds you well. I am writing to inquire about the BASIC Package that I recently selected on your website. I am eager to proceed with my project and would appreciate receiving the necessary pricing and additional details.%0D%0A%0D%0ACould you kindly provide me with the following information related to the BASIC Package:%0D%0A%0D%0A1. Pricing: Please specify the total cost of the package and any associated fees or charges.%0D%0A%0D%0A2. Services Included: Kindly outline the services and features included in the package, along with any limitations or restrictions.%0D%0A%0D%0A3. Timeline: I would like to know the estimated timeframe for the completion of the project once I proceed with the BASIC Package.%0D%0A%0D%0A4. Payment Options: Please provide information on the available payment methods and any specific instructions regarding the payment process.%0D%0A%0D%0AAdditionally, if there are any other pertinent details or requirements that I should be aware of before proceeding, please do not hesitate to let me know.%0D%0A%0D%0AThank you in advance for your assistance. I look forward to receiving the requested information so that I can make an informed decision and proceed with my project accordingly.%0D%0A%0D%0AThank you for your attention to this matter.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]%0D%0A[Your Contact Information]">Price</a>
+                </button>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="serv">
+                <h4 class="nice-title serv-tl">
+                  <span>P</span>
+                  <span>R</span>
+                  <span>O</span>
+                </h4>
+                <ul>
+                  <li>Web Consultancy</li>
+                  <li>Web Design (Up to 10 pages)</li>
+                  <li>Website Development (hand-coded) (Up to 10 pages)</li>
+                  <li>Basic Hosting (1 year)</li>
+                  <li>Technical Support (1 year)</li>
+                  <li>Maintenance (2 hours per month)</li>
+                </ul>
+                <button class="custom-btn">
+                  <a target="_blank" href="mailto:contact@developersafterparty.com?subject=Request for Pricing and Details - PRO Package&body=Hello there,%0D%0A%0D%0AI hope this email finds you well. I am writing to inquire about the PRO Package that I recently selected on your website. I am eager to proceed with my project and would appreciate receiving the necessary pricing and additional details.%0D%0A%0D%0ACould you kindly provide me with the following information related to the PRO Package:%0D%0A%0D%0A1. Pricing: Please specify the total cost of the package and any associated fees or charges.%0D%0A%0D%0A2. Services Included: Kindly outline the services and features included in the package, along with any limitations or restrictions.%0D%0A%0D%0A3. Timeline: I would like to know the estimated timeframe for the completion of the project once I proceed with the PRO Package.%0D%0A%0D%0A4. Payment Options: Please provide information on the available payment methods and any specific instructions regarding the payment process.%0D%0A%0D%0AAdditionally, if there are any other pertinent details or requirements that I should be aware of before proceeding, please do not hesitate to let me know.%0D%0A%0D%0AThank you in advance for your assistance. I look forward to receiving the requested information so that I can make an informed decision and proceed with my project accordingly.%0D%0A%0D%0AThank you for your attention to this matter.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]%0D%0A[Your Contact Information]">Price</a>
+                </button>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="serv">
+                <h4 class="nice-title serv-tl">
+                 <span>B</span>
+                 <span>U</span>
+                 <span>S</span>
+                 <span>I</span>
+                 <span>N</span>
+                 <span>E</span>
+                 <span>S</span>
+                 <span>S</span>
+                </h4>
+                <ul>
+                  <li>E-commerce Website</li>
+                  <li>Web Consultancy</li>
+                  <li>Web Design (Up to 15 pages)</li>
+                  <li>Website Development (Up to 15 pages)</li>
+                  <li>Basic Hosting (1 year)</li>
+                  <li>Technical Support (3 months)</li>
+                  <li>Maintenance (2 hours per month)</li>
+                </ul>
+                <button class="custom-btn">
+                  <a target="_blank" href="mailto:contact@developersafterparty.com?subject=Request for Pricing and Details - BUSINESS Package&body=Hello there,%0D%0A%0D%0AI hope this email finds you well. I am writing to inquire about the BUSINESS Package that I recently selected on your website. I am eager to proceed with my project and would appreciate receiving the necessary pricing and additional details.%0D%0A%0D%0ACould you kindly provide me with the following information related to the BUSINESS Package:%0D%0A%0D%0A1. Pricing: Please specify the total cost of the package and any associated fees or charges.%0D%0A%0D%0A2. Services Included: Kindly outline the services and features included in the package, along with any limitations or restrictions.%0D%0A%0D%0A3. Timeline: I would like to know the estimated timeframe for the completion of the project once I proceed with the BUSINESS Package.%0D%0A%0D%0A4. Payment Options: Please provide information on the available payment methods and any specific instructions regarding the payment process.%0D%0A%0D%0AAdditionally, if there are any other pertinent details or requirements that I should be aware of before proceeding, please do not hesitate to let me know.%0D%0A%0D%0AThank you in advance for your assistance. I look forward to receiving the requested information so that I can make an informed decision and proceed with my project accordingly.%0D%0A%0D%0AThank you for your attention to this matter.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]%0D%0A[Your Contact Information]">Price</a>
+                </button>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="serv">
+                <h4 class="nice-title serv-tl">
+                 <span>C</span>
+                 <span>U</span>
+                 <span>S</span>
+                 <span>T</span>
+                 <span>O</span>
+                 <span>M</span>
+                </h4>
+                <div class="custom-box">
+                  <p>If you're not sure which package is right for you or if you have more specific requirements, don't worry! We're here to help. Just send us a quote request and we'll work with you to create a customised package that meets all your needs.</p>
+                  <button class="custom-btn">
+                    <a target="_blank" href="mailto:contact@developersafterparty.com?subject=Quote Request&body=Hello there,%0D%0A%0D%0APlease provide me with a quote for the following project:%0D%0A%0D%0A[Project Details]%0D%0A%0D%0AKind regards,%0D%0A[Your Name].">Get a quote</a>
+                  </button>
+                  <p>* The pricing for the custom package will vary based on the client's specific needs and requirements.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-nav">
+              <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+            <div class="slider-nav2">
+              <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+              <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+            <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              function showSlides(n) {
+                let i;
+                const slides = document.getElementsByClassName("slide");
+                if (n > slides.length) {
+                  slideIndex = 1;
+                }
+                if (n < 1) {
+                  slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+              }
+            </script>
+        </div>
+        </div>
+        <div class="pkg">
+          <p>* Please be advised that if you require any package,
+            <br> 
+            kindly send us an e-mail containing the package name along 
+            <br>
+            with details about your project.</p>
+        </div>
+      </section>
+      <div id="spc">
+      </div>
+      <section id="contact-section">
+        <div class="spc-out2">
+          <div class="contact-ctn"> 
+            <h2>Contact Us</h2>
+            <p>
+              If you feel like saying hi, bouncing off some new projects,
+              exploring some creative ideas, or building new opportunities together, 
+              just shoot us an e-mail! Although we are a small team, 
+              but we'll do our best to get back to you as soon as possible.
+            </p>
+            <div class="ct-em">
+              <a target="_blank" href="mailto:contact@developersafterparty.com">contact@developersafterparty.com</a>
+              <a target="_blank" href="mailto:support@developersafterparty.com">support@developersafterparty.com</a>
+            </div>      
+          </div> 
+        </div>
+      </section>
+      <div id="spc-three">
+      </div>
+    </div>
+    <footer id="footer-section">
+      <div class="footer-ctn">
+        <div class="sm-ctn">
+          <div class="socials">
+            <a target="_blank" href="https://www.instagram.com/developersafterparty/"><img src="./resources/images/instagram.png" class="sm"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/developers-after-party/"><img src="./resources/images/linkedin.png" class="sm"></a>
+          </div>
+          <a class="pp-a" href="./privacy-index.html">Privacy Policy</a>
+        </div>
+        <div class="cr-ctn">
+          <h5>Copyright © 2023 Developers After Party.</h5>
+          <!--Designed and developed by Andrei F.
+              Co-Founder / Web Designer / Web Developer
+              @ Developers After Party
+              www.andreifo.dev-->
+        </div>
+      </div>
+    </footer> 
+    <div class="bg"></div>
+    <span id="bubble" class="bubble">
+      <img class="rotate" src="./resources/images/bubble.png" width="1000px" height="auto">
+    </span>
+  </body>
